@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="technarium.css" />
+<!-- include jQuery -->
+<script src="scripts/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+    var language = location.search.substr(location.search.indexOf("=")+1);
+    if (language === ""){
+		language = "en"
+		document.title = 'Support us';
+		}
+	else if (language === "en"){
+		document.title = 'Support us';
+		}
+	else if (language === "lt"){
+		document.title = 'Palaikykite mus';
+		}
+
+</script>
+
+</head>
+
+<body>
+<div id="content">
+<a href="index.html" title="Home"><img src="img/logo_small.png" alt="Technarium" /></a>
+<div id="switchLang">
+<p><a id='LT' href="?language=lt">&nbsp;lt&nbsp;</a>
+<a id='EN' href="?language=en">en</a></p>
+</div>
+<div id="nav">
+<script type="text/javascript" language="javascript">
+$( "#nav" ).load( "nav-"+language+".html" );
+</script>
+</div>
+<div id="textBox" class='normal'>
+<div id="supportText">
+<script type="text/javascript" language="javascript">
+$( "#supportText" ).load( "support-"+language+".html" );
+</script>
+</div>
+<div id="footer"><p><img src="img/entropy.png" alt="Entropy web services" />Entropy web services 2014-2015</p>
+</div>
+</div>
+</div>
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(["setCookieDomain", "*.technariumas.lt"]);
+  _paq.push(["setDomains", ["*.technariumas.lt","*.technarium.lt"]]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://stats.technariumas.lt/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "1"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+<!-- Piwik Image Tracker -->
+<img src="http://stats.technariumas.lt/piwik.php?idsite=1&amp;rec=1" style="border:0" alt="" />
+<!-- End Piwik -->
+</body>
+</html>  
