@@ -1,9 +1,8 @@
-html, body, div {
+body {
         background:#ffffff;
         padding:0px;
         margin:0px;
         width:100%;
-
 
 /* Helvetica/Arial-based sans serif stack */
 font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT",  "Myriad Pro", Myriad, "DejaVu Sans Condensed",  "Liberation Sans","Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
