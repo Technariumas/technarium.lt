@@ -10,13 +10,13 @@
     var language = location.search.substr(location.search.indexOf("=")+1);
     if (language === ""){
 		language = "en"
-		document.title = 'Join Technarium!';
+		document.title = 'FAQ';
 		}
 	else if (language === "en"){
-		document.title = 'Join Technarium!';
+		document.title = 'FAQ';
 		}
 	else if (language === "lt"){
-		document.title = 'Prisijunk!';
+		document.title = 'FAQ';
 		}
 </script>
 
@@ -38,7 +38,7 @@ $( "#nav" ).load( "nav-"+language+".html" );
 <div id="textBox" class='normal'>
 <div id="joinText">
 <script type="text/javascript" language="javascript">
-$( "#joinText" ).load( "join-"+language+".html" );
+$( "#joinText" ).load( "faq-"+language+".html" );
 </script>
 </div>
 <div id="footer"><p><img src="img/entropy.png" alt="Entropy web services" />Entropy web services 2014-2020</p>
